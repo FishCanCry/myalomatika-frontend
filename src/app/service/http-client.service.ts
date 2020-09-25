@@ -12,6 +12,6 @@ export class HttpClientService {
 
   getNumbers() {
     console.log("test call");
-    return this.httpClient.get<number[]>('http://localhost:8080/getNumbers');    
+    return this.httpClient.get<number[]>('http://myalomatika-numbers-generator-service-svc/getNumbers?level=1&digit=2&count=10&combo=true');    
   }
 }
